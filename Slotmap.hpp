@@ -88,7 +88,7 @@ public:
 
         reference operator*() const { return *elementPointer; }
         pointer operator->() { return elementPointer; }
-        const pointer operator->() const { return elementPointer; }
+        pointer operator->() const { return elementPointer; }
 
         operator pointer() const { return elementPointer; }
 
@@ -153,7 +153,7 @@ public:
 
         reference operator*() const { return *elementPointer; }
         pointer operator->() { return elementPointer; }
-        const pointer operator->() const { return elementPointer; }
+        pointer operator->() const { return elementPointer; }
 
     private:
         pointer elementPointer;
